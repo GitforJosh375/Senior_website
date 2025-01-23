@@ -1,6 +1,6 @@
 const bcrypt = require("bcryptjs");
 
-const password = "parking123"; // The password you want to hash
+const password = ""; // The password you want to hash
 const saltRounds = 10; // The number of rounds to generate the salt (10 is typical)
 
 bcrypt.hash(password, saltRounds)
