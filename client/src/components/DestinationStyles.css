@@ -1,0 +1,194 @@
+h1, h2, h3 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Destination Container */
+.destination-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgb(240, 67, 67); 
+}
+
+.space {
+  width: 12%
+}
+.sidebar {
+  width: 10%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  height: auto;
+}
+
+.sidebar h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.sidebar ul {
+  padding-left: 0;
+  font-size: 2rem;
+  
+}
+
+.sidebar li {
+  line-height: 4rem;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  color:rgb(240, 67, 67);
+}
+
+/* Main Content */
+.destination {
+  width: 65%;
+  background-color: #ffffff;
+  padding: 2rem 6rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.about-us {
+  text-align: left;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.about-us h1 {
+  text-align: left;
+  font-size: 4rem;
+  color: #fd3f3f;
+}
+
+.about-us p, .about-us ul {
+  text-align: left;
+  font-size: 2rem;
+  line-height: 2.0;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.about-us ul {
+  text-align: center;
+  font-style: italic;
+}
+
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  color: #333;
+  padding-bottom: 1rem;
+}
+
+.about-us h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+/* Responsive Design for iPhones and Small Screens */
+@media (max-width: 768px) {
+  .destination-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .space {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .sidebar h3 {
+    font-size: 1.5rem;
+  }
+
+  .sidebar ul {
+    font-size: 1.5rem;
+  }
+
+  .sidebar li {
+    line-height: 2.5rem;
+  }
+
+  .destination {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .about-us h1 {
+    font-size: 2rem;
+  }
+
+  .about-us p, .about-us ul {
+    font-size: 1.5rem;
+  }
+
+  .about-us h2, .about-us h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .destination-container {
+    padding: 1rem;
+  }
+
+  .sidebar {
+    padding: 0.5rem;
+  }
+
+  .sidebar h3 {
+    font-size: 1.2rem;
+  }
+
+  .sidebar ul {
+    font-size: 1.2rem;
+  }
+
+  .sidebar li {
+    line-height: 2rem;
+  }
+
+  .destination {
+    padding: 0.5rem;
+  }
+
+  .about-us h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-us p, .about-us ul {
+    font-size: 1.2rem;
+  }
+
+  .about-us h2, .about-us h3 {
+    font-size: 1rem;
+  }
+}

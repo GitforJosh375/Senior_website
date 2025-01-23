@@ -1,0 +1,36 @@
+.footer{
+  padding: 4rem 6rem;
+  background: black;
+  color: white;
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top i{
+  color: white;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.top i:hover{
+  color: rgb(198, 196, 196);
+  
+}
+
+@media screen and (max-width: 555px){
+
+  .footer{
+      
+      padding: 1rem 0.5rem;
+      background: black;
+      color: white;
+  }
+
+
+}

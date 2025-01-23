@@ -1,0 +1,75 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(36, 37, 39, 0.85), rgba(45, 47, 50, 0.9));
+  color: white;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form labels */
+.loginContainer label {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Input fields */
+.loginContainer input {
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 300px;
+  border: 6px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-size: 1.1rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input field focus effect */
+.loginContainer input:focus {
+  border-color: #f62727;
+  box-shadow: 0 0 10px rgba(232, 29, 29, 0.5);
+}
+
+/* Button style */
+.loginContainer button {
+  padding: 12px 25px;
+  background-color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 300px;
+  margin-top: 10px;
+  display: block; /* Ensure visibility */
+}
+
+/* Button hover effect */
+.loginContainer button:hover {
+  background-color: #eb3d3d;
+}
+
+/* Additional small devices responsiveness */
+@media (max-width: 480px) {
+  .loginContainer input,
+  .loginContainer button {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .loginContainer label {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
+}

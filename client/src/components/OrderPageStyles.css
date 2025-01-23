@@ -1,0 +1,146 @@
+.form-container{
+  margin: 30vh 6rem;
+  color: #222;
+}
+
+.form-container form{
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+}
+
+.form-container h1 {
+  color: white
+}
+
+.form-container input{
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #222;
+}
+
+
+.form-container textarea{
+  height: 6rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #222;
+}
+
+.form-container button {
+  background-color: rgb(135, 135, 135);
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3 rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.form-container button:hover{
+  background-color: #ee3232;
+  color: #fff;
+}
+
+.form-container {
+  margin: 20rem 6rem; /* Increased top margin for spacing */
+  color: #222;
+}
+
+.form-container form {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+}
+
+.form-container h1 {
+  color: white;
+}
+
+.form-container input {
+  height: 3rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #222;
+}
+
+.form-container textarea {
+  height: 6rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #222;
+}
+
+.form-container button {
+  background-color: rgb(135, 135, 135);
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.form-container button:hover {
+  background-color: #ee3232;
+  color: #fff;
+}
+
+@media screen and (max-width: 850px) {
+  .form-container {
+    margin: 12rem 1rem; /* Adjusted top margin for smaller screens */
+  }
+
+  .form-container form {
+    padding-top: 2rem;
+    width: 90%;
+  }
+
+  .form-container button {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 1rem 0;
+  }
+
+  .form-container button:hover {
+    background-color: #151515;
+    color: #fff;
+  }
+}
+
+/* Specific Adjustment for iPhones and Small Devices */
+@media screen and (max-width: 375px) {
+  .form-container {
+    margin: 15rem 1rem; /* Further increased top margin for better spacing */
+  }
+
+  .form-container form {
+    width: 100%; /* Ensure form takes the full width */
+  }
+
+  .form-container input, 
+  .form-container textarea {
+    font-size: 1rem; /* Adjust text size for smaller screens */
+  }
+
+  .form-container button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+
