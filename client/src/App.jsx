@@ -18,7 +18,7 @@ export default function App() {
 
   useEffect(() => {
       axios
-          .get("http://localhost:3001/auth/auth", {
+          .get(`${import.meta.env.VITE_BACKEND_URL}/auth/auth`, {
               headers: {
                   accessToken: localStorage.getItem("accessToken"),
               },
