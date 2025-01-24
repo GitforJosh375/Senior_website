@@ -6,7 +6,13 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+const corsOptions = {
+  origin: "https://lotview.netlify.app", // Change this to your frontend URL
+  methods: ["GET", "POST"],
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
 
 const db = require("./models");
 
