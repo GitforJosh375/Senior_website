@@ -12,7 +12,7 @@ const corsOptions = {
   methods: ["GET", "POST"],
   credentials: true,
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Import Sequelize models
 const db = require("./models");
