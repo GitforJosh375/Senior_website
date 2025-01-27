@@ -90,7 +90,7 @@
   li {
     text-align: center;
   }
-  button {
+  .NavbarItems button {
     width: 40% !important;
   }
   .nav-links {

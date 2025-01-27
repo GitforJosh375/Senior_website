@@ -22,7 +22,7 @@ ul li {
 }
 
 .space {
-  width: 12%
+  width: 6%
 }
 .sidebar {
   width: 20%;
@@ -59,7 +59,7 @@ ul li {
 .destination {
   width: 65%;
   background-color: #ffffff;
-  padding: 2rem 6rem;
+  padding: 2rem 4rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
 }
@@ -67,7 +67,7 @@ ul li {
 .about-us {
   text-align: left;
   background-color: white;
-  padding: 1rem;
+
   border-radius: 8px;
 }
 
@@ -104,15 +104,14 @@ ul li {
   color: #333;
 }
 
-@media (max-width: 1024px) {
-  .destination-container {
-    padding: 1rem;
+@media (max-width: 1250px) {
+  .space {
+    width: 2%
   }
-  
 }
 
 /* Responsive Design for iPhones and Small Screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .destination-container {
     flex-direction: column;
     align-items: center;
@@ -124,7 +123,7 @@ ul li {
   }
 
   .sidebar {
-    width: 98%;
+    width: 60%;
     margin-bottom: 1rem;
     padding: 1rem;
   }
