@@ -39,14 +39,10 @@ ul li {
   font-size: 2rem;
 }
 
-.sidebar ul {
-  padding-left: 0;
-  font-size: 2rem;
-  
-}
+
 
 .sidebar li {
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 .sidebar ul li {
