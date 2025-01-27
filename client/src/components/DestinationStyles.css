@@ -104,6 +104,13 @@ ul li {
   color: #333;
 }
 
+@media (max-width: 1024px) {
+  .destination-container {
+    padding: 1rem;
+  }
+  
+}
+
 /* Responsive Design for iPhones and Small Screens */
 @media (max-width: 768px) {
   .destination-container {
@@ -117,7 +124,7 @@ ul li {
   }
 
   .sidebar {
-    width: 100%;
+    width: 98%;
     margin-bottom: 1rem;
     padding: 1rem;
   }
@@ -135,16 +142,16 @@ ul li {
   }
 
   .destination {
-    width: 100%;
-    padding: 1rem;
+    width: 98%;
+    padding: 0.8rem;
   }
 
   .about-us h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .about-us p, .about-us ul {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .about-us h2, .about-us h3 {
@@ -182,7 +189,7 @@ ul li {
   }
 
   .about-us p, .about-us ul {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   .about-us h2, .about-us h3 {
