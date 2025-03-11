@@ -7,7 +7,7 @@ let carCount = 0;
 let currentCommand = { command: "stop" }; // In-memory variable to store the current command
 
 // POST /detection - Endpoint to receive car count from the Python script
-router.post("/detection", validateToken, async (req, res) => {
+router.post("/detection", async (req, res) => {
   const { count } = req.body;
 
   // Validate the input
