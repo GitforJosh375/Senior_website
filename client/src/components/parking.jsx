@@ -10,7 +10,7 @@ const Parking = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/detection`)
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/detection/detection`)
       .then(response => {
         setCarCount(response.data.carCount);
       })
@@ -19,7 +19,7 @@ const Parking = () => {
         console.error(err);
       });
 
-    axios.get(`${import.meta.env.VITE_BACKEND_URL}/command`)
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/detection/command`)
       .then(response => {
         setCommand(response.data.command);
       })
@@ -35,7 +35,7 @@ const Parking = () => {
     console.log("Raspberry Pi started.");
     
 
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/command`, { command: 'start' })
+    axios.post(`${import.meta.env.VITE_BACKEND_URL}/detection/command`, { command: 'start' })
       .then(response => {
         setCommand('start');
         console.log(response.data.message);
@@ -52,7 +52,7 @@ const Parking = () => {
     console.log("Raspberry Pi stopped.");
     
 
-    axios.post(`${import.meta.env.VITE_BACKEND_URL}/command`, { command: 'stop' })
+    axios.post(`${import.meta.env.VITE_BACKEND_URL}/detection/command`, { command: 'stop' })
       .then(response => {
         setCommand('stop');
         console.log(response.data.message);
