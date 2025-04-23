@@ -10,8 +10,6 @@ const Parking = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulating API request for development (commented out when Raspberry Pi is live)
-    /*
     axios.get(`${import.meta.env.VITE_BACKEND_URL}/detection`)
       .then(response => {
         setCarCount(response.data.carCount);
@@ -29,16 +27,14 @@ const Parking = () => {
         setError("Error fetching current command");
         console.error(err);
       });
-    */
-  }, []);  // Empty dependency array ensures this runs only once, like componentDidMount
+
+  }, []);  
 
   const startRaspberryPi = () => {
     // Simulating the Raspberry Pi start for development
-    setCommand('start');
     console.log("Raspberry Pi started.");
     
-    // Uncomment to use with live API
-    /*
+
     axios.post(`${import.meta.env.VITE_BACKEND_URL}/command`, { command: 'start' })
       .then(response => {
         setCommand('start');
@@ -48,16 +44,14 @@ const Parking = () => {
         setError("Error starting Raspberry Pi");
         console.error(err);
       });
-    */
+
   };
 
   const stopRaspberryPi = () => {
     // Simulating the Raspberry Pi stop for development
-    setCommand('stop');
     console.log("Raspberry Pi stopped.");
     
-    // Uncomment to use with live API
-    /*
+
     axios.post(`${import.meta.env.VITE_BACKEND_URL}/command`, { command: 'stop' })
       .then(response => {
         setCommand('stop');
@@ -67,9 +61,10 @@ const Parking = () => {
         setError("Error stopping Raspberry Pi");
         console.error(err);
       });
-    */
+
   };
 
+  
   const spotsAvailable = 51 - carCount;
 
   return (
@@ -78,7 +73,7 @@ const Parking = () => {
     <div className="parking-lot-content">
       <div>
         <h1>Thomas Jefferson West Parking Lot </h1>
-        <p className="total">Total Spots: 51</p>
+        <p className="total">Total Spots: spotsAvailable</p>
         <img
           src={BirdsEyeView}
           alt="Bird's Eye View of Parking Lot"
