@@ -93,6 +93,7 @@ const Parking = () => {
       <button className="stop-button" onClick={stopRaspberryPi}>
         Stop Raspberry Pi
       </button>
+      <p>Current Command: {command}</p>
       {error && <p className="error-message">{error}</p>}
     </div>
   </div>
